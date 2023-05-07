@@ -1,13 +1,11 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Alert from 'react-bootstrap/Alert';
-import { Fade,Flip,Rotate,Zoom,Bounce,Roll } from 'react-reveal';
 
 function BasicExample(props) {
 
   return (
     <div>
-      <Fade left>
       {
         props.CardsData.length > 1? props.CardsData.map((e , i) => {
           return(
@@ -32,7 +30,6 @@ function BasicExample(props) {
           )
         }) : <Alert variant='warning' style={{textAlign:'center'}}> لا يوجد وجبات متاحه  ;  تاكد من مفتاح البحث  </Alert>  
         }
-        </Fade>
     </div>
   );
 }
